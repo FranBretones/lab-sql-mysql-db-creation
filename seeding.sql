@@ -14,7 +14,7 @@ VALUES
 (2, '20001', 'Abraham Lincoln', '+1 305 907 7086', NULL, '120 SW 8th St', 'Miami', 'Florida', 'United States', '33130'),
 (3, '30001', 'Napoléon Bonaparte', '+33 1 79 75 40 00', NULL, '40 Rue du Colisée', 'Paris', 'Île-de-France', 'France', '75008');
 
-INSERT INTO salesperson (id, staff_id, name_staf, store)
+INSERT INTO salespersons (id, staff_id, name_staf, store)
 VALUES	(1, 00001, 'Petey Cruiser', 'Madrid'),
 		(2, 00002, 'Anna Sthesia', 'Barcelona'),
 		(3, 00003, 'Paul Molive', 'Berlin'),
