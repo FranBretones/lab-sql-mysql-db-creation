@@ -4,32 +4,32 @@ use lab_mysql;
 DROP TABLE IF EXISTS cars;
 CREATE TABLE cars (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    VIN VARCHAR(20),
-    manufacturer VARCHAR(50),
-    model VARCHAR(50),
-    year INT,
-    color VARCHAR(30)
+    vin VARCHAR(30) NOT NULL,
+    manufacturer VARCHAR(50) NOT NULL,
+    model VARCHAR(50) NOT NULL,
+    year SMALLINT NOT NULL,
+    color VARCHAR(30) NOT NULL
 );
 
-DROP TABLE IF EXISTS customer;
+DROP TABLE IF EXISTS customers;
 CREATE TABLE customers (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    customer_id VARCHAR(20) UNIQUE NOT NULL,
-    name VARCHAR(100) NOT NULL,
-    phone VARCHAR(20),
-    email VARCHAR(100),
-    address VARCHAR(150),
-    city VARCHAR(50),
-    state_province VARCHAR(50),
-    country VARCHAR(50),
-    zip_code VARCHAR(20)
+    cust_id VARCHAR(20) UNIQUE NOT NULL,
+    cust_name VARCHAR(100) NOT NULL,
+    cust_phone VARCHAR(20),
+    cust_email VARCHAR(100),
+    cust_address VARCHAR(150),
+    cust_city VARCHAR(50),
+    cust_state VARCHAR(50),
+    cust_country VARCHAR(50),
+    cust_zip VARCHAR(20)
 );
     
-DROP TABLE IF EXISTS salesperson;
+DROP TABLE IF EXISTS salespersons;
 CREATE TABLE salespersons (
 	id	INT AUTO_INCREMENT PRIMARY KEY,
     staff_id INT,	
-    name_staff VARCHAR(50),
+    name VARCHAR(50),
     store VARCHAR(50)
 	);
     
