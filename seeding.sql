@@ -1,4 +1,4 @@
-INSERT INTO cars (id, VIN, manufacturer, model, year, color)
+INSERT INTO cars (id, vin, manufacturer, model, year, color)
 VALUES  
 ( '3K096I98581DHSNUP', 'Volkswagen', 'Tiguan', 2019, 'Blue'),
 ( 'ZM8G7BEUQZ97IH46V', 'Peugeot', 'Rifter', 2019, 'Red'),
@@ -8,13 +8,13 @@ VALUES
 ('DAM41UDN3CHU2WVF6', 'Volvo', 'V60 Cross Country', 2019, 'Gray'); 
 ;
 
-INSERT INTO customers (id, customer_id, name, phone, email, address, city, state_province, country, zip_code)
+INSERT INTO customers (id, cust_id, cust_name, cust_phone, cust_email, cust_address, cust_city, cust_state, cust_country, cust_zip)
 VALUES  
 ( '10001', 'Pablo Picasso', '+34 636 17 63 82', NULL, 'Paseo de la Chopera 14', 'Madrid', 'Madrid', 'Spain', '28045'),
 ( '20001', 'Abraham Lincoln', '+1 305 907 7086', NULL, '120 SW 8th St', 'Miami', 'Florida', 'United States', '33130'),
 ( '30001', 'Napoléon Bonaparte', '+33 1 79 75 40 00', NULL, '40 Rue du Colisée', 'Paris', 'Île-de-France', 'France', '75008');
 
-INSERT INTO salespersons (id, staff_id, name_staff, store)
+INSERT INTO salespersons (id, staff_id, name, store)
 VALUES	( 00001, 'Petey Cruiser', 'Madrid'),
 		( 00002, 'Anna Sthesia', 'Barcelona'),
 		( 00003, 'Paul Molive', 'Berlin'),

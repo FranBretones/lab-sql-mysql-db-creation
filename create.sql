@@ -22,7 +22,7 @@ CREATE TABLE customers (
     cust_city VARCHAR(50),
     cust_state VARCHAR(50),
     cust_country VARCHAR(50),
-    cust_zip VARCHAR(20)
+    cust_zipcode VARCHAR(20)
 );
     
 DROP TABLE IF EXISTS salespersons;
